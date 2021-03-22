@@ -1,0 +1,66 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-description p {
+    padding: 0;
+  }
+
+  .services-box .services-box-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    line-height: 50px;
+    border-radius: 18px;
+  }
+
+  .organic-olive-box {
+    margin-top: 80px;
+  }
+  .organic-olive-box:last-child {
+    margin-top: 50px;
+  }
+  .organic-olive-box-text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .frying-oil-box .frying-oil-box-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    line-height: 50px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-description p {
+    padding: 0;
+  }
+  .services-container {
+    padding-bottom: 60px;
+  }
+  .organic-olive-box {
+    margin-top: 80px;
+  }
+  .aorganic-olive-box:last-child {
+    margin-top: 50px;
+  }
+  .organic-olive-box-text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .frying-oil-box {
+    text-align: center;
+  }
+  .frying-oil-box h3 {
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 415px) {
+  h1,
+  h2 {
+    font-size: 32px;
+  }
+}
