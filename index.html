@@ -23,8 +23,11 @@
     <div class="container-fluid">
       <div class="container">
         <!-- navbar -->
-        <div class="row row1">
-          <div class="col-3 mt-4 mb-4">logoooooooooo</div>
+        <div class="row row1 fixed-top" style="background-color: rgba(0, 0, 0, 0.185);">
+  
+          <div class="col-3 ">
+            <a href="./index.html"><img class="logo" src="./img/Olyatanew43-removebg-preview.png" alt="logo"></a>
+          </div>
           <div class="col-8 mt-4 mb-4"></div>
           <div class="col-1 mt-4 mb-4">
             <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span
@@ -32,10 +35,37 @@
             <div class="overlay" id="overlay">
               <nav class="overlay-menu">
                 <ul>
-                  <li><a href="#">ovde</a></li>
-                  <li><a href="#">mogu</a></li>
-                  <li><a href="#">kartice</a></li>
-                  <li><a href="#">sa ikonicom</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li>
+  
+                    <div class="dropdown">
+                      <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <h1 class="text-center">Product <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                          </svg></h1>
+                      </a>
+  
+                      <div class="dropdown-menu " aria-labelledby="dropdownMenuLink"
+                        style="background-color: #1abc9c; margin-left: 1.2rem;">
+                        <a class="dropdown-item" href="#">
+                          <h5>Organic olive oil</h5>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <h5>Frying olive oil</h5>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <h5>Infused olive oil</h5>
+                        </a>
+                      </div>
+                    </div>
+  
+                  </li>
+                  <br>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Contact us</a></li>
                 </ul>
               </nav>
             </div>
@@ -346,6 +376,16 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!-- foter -->
+    <footer class="footer">
+      <div class="footer-left-img">
+        <img src="/img/Olyata_logo.png" alt="logo">
+      </div>
+      <div class="footer-bottom">
+        <p> ALL Right Reserved by: &copy;<b> Oil'Projekat </b>- 2021</p>
+      </div>
+    </footer>
+    <!-- footer end -->
 
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

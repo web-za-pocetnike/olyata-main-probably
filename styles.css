@@ -1,10 +1,10 @@
-
-  body, html {
+body,
+html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -16,6 +16,11 @@
   margin-top: 2rem;
 }
 
+.logo {
+  top: 0;
+  width: 10rem;
+  margin-top: -0.785rem;
+}
 .button_container {
   position: relative;
   /* top: 20%; */
@@ -31,15 +36,15 @@
 }
 .button_container.active .top {
   transform: translateY(11px) translateX(0) rotate(45deg);
-  background: #FFF;
+  background: #fff;
 }
 .button_container.active .middle {
   opacity: 0;
-  background: #FFF;
+  background: #fff;
 }
 .button_container.active .bottom {
   transform: translateY(-11px) translateX(0) rotate(-45deg);
-  background: #FFF;
+  background: #fff;
 }
 .button_container span {
   background: #1abc9c;
@@ -119,11 +124,13 @@
 .overlay ul li a {
   display: block;
   position: relative;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   overflow: hidden;
 }
-.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+.overlay ul li a:hover:after,
+.overlay ul li a:focus:after,
+.overlay ul li a:active:after {
   width: 100%;
 }
 .overlay ul li a:after {
@@ -134,7 +141,7 @@
   width: 0%;
   transform: translateX(-50%);
   height: 3px;
-  background: #FFF;
+  background: #fff;
   transition: 0.35s;
 }
 
@@ -177,15 +184,15 @@
 .skill-container {
   width: 100%;
 }
-@media screen and (max-width:771px) {
-.skills {
+@media screen and (max-width: 771px) {
+  .skills {
     display: none;
+  }
 }
-}
-@media screen and (min-width:771px) {
-#carousel2 {
+@media screen and (min-width: 771px) {
+  #carousel2 {
     display: none;
-}
+  }
 }
 @media screen and (min-width: 1024px) {
   .skills-container {
@@ -700,13 +707,15 @@ section article div div p {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
+.contact .php-email-form input::focus,
+.contact .php-email-form textarea::focus {
   background-color: #428bca;
 }
 
@@ -747,3 +756,37 @@ section article div div p {
     transform: rotate(360deg);
   }
 }
+/* footer */
+.footer {
+  display: -webkit-flex;
+  display: -moz- flex;
+  display: -ms- flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 45px;
+  color: #fff;
+  background: #262626;
+}
+.footer > * {
+  flex: 1 100%;
+}
+.footer-left-img {
+  margin-right: 1.25rem;
+  margin-bottom: 2em;
+}
+.footer-left-img img {
+  width: 20%;
+  cursor: pointer;
+}
+.footer-bottom {
+  text-align: center;
+  color: #999;
+  padding-top: 50px;
+}
+@media screen and (min-width: 600px) {
+  .footer-left-img {
+    flex: 1 0px;
+  }
+}
+
+/* footer-end */
