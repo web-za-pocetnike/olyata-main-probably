@@ -3,17 +3,75 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+  line-height: 30px;
+  text-align: center;
+}
+strong {
+  font-weight: 600;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+h1,
+h2 {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  color: #555;
+  line-height: 50px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #555;
+  line-height: 30px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.medium-paragraph {
+  font-size: 17px;
+  line-height: 32px;
+}
+
+/***** General style, all sections *****/
+
+.section-container {
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.section-container-gray-bg {
+  background: #f8f8f8;
+}
+
+.divider-1 span {
+  border-color: #fff;
+}
+
+.section-description {
+  margin-top: 60px;
+  padding-bottom: 10px;
+}
+
+/***** Divider *****/
+
+.divider-1 span {
+  display: inline-block;
+  width: 200px;
+  border-bottom: 1px dashed #ccc;
 }
 
 /* header */
 /* arrow */
-.demoarrow {
+/*.demoarrow {
   position: relative;
   width: 100%;
   height: 550px;
@@ -21,7 +79,7 @@ html {
   margin: 0;
   box-sizing: border-box;
   background: olive;
-}
+}*/
 .demoarrow a {
   position: absolute;
   bottom: 0;
@@ -38,9 +96,7 @@ html {
 .demoarrow a:hover {
   opacity: 0.5;
 }
-.demoarrow a h5 {
-  margin-left: 14px;
-}
+
 #arrowdown a {
   padding-top: 70px;
 }
@@ -51,8 +107,8 @@ html {
   width: 40px;
   height: 40px;
   margin-left: -12px;
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
+  border-left: 5px solid #1abc9c;
+  border-bottom: 5px solid #1abc9c;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb04 2s infinite;
@@ -84,6 +140,10 @@ html {
 /* end of arrow down */
 
 /* end of arrow */
+.all_bottom {
+  position: absolute;
+  top: 740px;
+}
 
 .slide {
   height: 85vh;
@@ -252,6 +312,7 @@ html {
 
 /* video */
 
+/*Komentirao jer preklapa frying oil
 .container {
   position: relative;
   height: 550px;
@@ -278,8 +339,73 @@ html {
   color: rgba(255, 255, 255, 0.19);
   z-index: 1000;
 }
+.video-fluid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
 
 /* end video  */
+
+/***** Organic Olive *****/
+
+.organic-olive-box {
+  margin-top: 100px;
+}
+
+.organic-olive-box-text {
+  padding-right: 30px;
+  text-align: left;
+}
+
+.organic-olive-box-text h2 {
+  margin-top: 0;
+}
+
+.organic-olive-box-text .medium-paragraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.organic-olive-box-text a:hover,
+.organic-olive-box-text a:focus {
+  border: 0;
+}
+
+.organic-olive-box-img img {
+  border-radius: 4px;
+}
+
+/***** Frying Olive Oil *****/
+
+.frying-oil-box {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.frying-oil-box .frying-oil-box-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  font-size: 28px;
+  color: #9f9123;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 22px;
+}
+
+.frying-oil-box h3 {
+  margin-top: 0;
+  padding: 0 0 10px 0;
+  text-align: center;
+}
+.frying-oil-box p {
+  text-align: center;
+}
 
 /* skill cards */
 
@@ -669,7 +795,6 @@ section article div div p {
 
 .product-section {
   display: flex;
-  /* background-color: greenyellow; */
   height: 60vh;
   width: 100%;
   margin-bottom: 2rem;
@@ -681,7 +806,6 @@ section article div div p {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: indianred; */
   height: 100%;
   width: 50%;
 }
