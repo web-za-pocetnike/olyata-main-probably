@@ -164,7 +164,7 @@ img {
   height: 27px;
   width: 35px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 9999;
   transition: opacity 0.25s ease;
 }
 
@@ -218,7 +218,7 @@ img {
   visibility: hidden;
   transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden;
-  z-index: 5;
+  z-index: 9997;
 }
 
 .overlay.open {
@@ -544,7 +544,7 @@ section article div div h2 {
   position: absolute;
   text-align: center;
   width: 100%;
-  z-index: 9999;
+  z-index: 200;
 }
 
 section article div div p {
@@ -555,7 +555,7 @@ section article div div p {
   margin-top: 200px;
   position: absolute;
   text-align: center;
-  z-index: 9999;
+  z-index: 200;
 }
 
 .cta-container {
@@ -564,7 +564,7 @@ section article div div p {
   position: absolute;
   text-align: center;
   width: 100%;
-  z-index: 9999;
+  z-index: 200;
 }
 
 .cta {
@@ -835,7 +835,7 @@ section article div div p {
 .product-prev-btn,
 .product-next-btn {
   margin: 0 0.5rem;
-  z-index: 9998;
+  z-index: 200;
   outline: none;
   /* border: none; */
   background: none;
