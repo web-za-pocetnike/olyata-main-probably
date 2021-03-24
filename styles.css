@@ -781,6 +781,8 @@ section article div div p {
 
 /* Product styles */
 
+/* Product styles */
+
 .divide-line {
   width: 100%;
   height: 1px;
@@ -792,38 +794,37 @@ section article div div p {
   );
   margin: 5rem 0;
 }
-
 .product-section {
   display: flex;
-  height: 60vh;
+  justify-content: space-between;
+  /* background-color: greenyellow; */
+  height: 70vh;
   width: 100%;
-  margin-bottom: 2rem;
 }
 
 /* Product selection image and button style*/
-
 .product-image {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: indianred; */
   height: 100%;
-  width: 50%;
+  width: 40%;
 }
 
 .butons {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+
   /* background-color: lawngreen; */
   height: 100%;
-  width: 100%;
+  width: 5%;
 }
 
 .img-container {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
-
 .product-img {
   width: 100%;
   height: 100%;
@@ -835,9 +836,9 @@ section article div div p {
 .product-prev-btn,
 .product-next-btn {
   margin: 0 0.5rem;
-  z-index: 200;
+  z-index: 9998;
   outline: none;
-  /* border: none; */
+  border: none;
   background: none;
   cursor: pointer;
 }
@@ -851,10 +852,11 @@ section article div div p {
   flex-direction: column;
   /* background-color: khaki; */
   height: 100%;
-  width: 50%;
+  width: 40%;
+  overflow: auto;
 }
-
 .product-title {
+  padding-top: 5px;
   text-transform: uppercase;
   color: rgb(78, 104, 51);
   font-size: 2rem;
