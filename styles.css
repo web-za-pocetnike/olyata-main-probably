@@ -10,6 +10,23 @@ html {
   line-height: 30px;
   text-align: center;
 }
+:root {
+  --clr-primary: #EFE1B2;
+  --clr-primary-dark:#DCC252;
+  --clr-h-txt-dark:#546A3D;
+  --clr-h-txt:#86A949;
+  --clr-secondary:#B8C74A ;
+  --clr-white-dark:#e7dede ;
+  --clr-white: rgb(255, 255, 255);
+  --clr-black: rgb(34, 29, 29);
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-secondary: "Roboto", cursive;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --radius-sm: 0.25rem;
+  scroll-behavior: smooth;
+  }
 strong {
   font-weight: 600;
 }
