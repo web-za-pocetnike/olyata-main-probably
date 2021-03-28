@@ -9,14 +9,20 @@ html {
   color: #888;
   line-height: 30px;
   text-align: center;
+  scrollbar-width: none;
 }
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
 :root {
-  --clr-primary: #EFE1B2;
-  --clr-primary-dark:#DCC252;
-  --clr-h-txt-dark:#546A3D;
-  --clr-h-txt:#86A949;
-  --clr-secondary:#B8C74A ;
-  --clr-white-dark:#e7dede ;
+  --clr-primary: #efe1b2;
+  --clr-primary-dark: #dcc252;
+  --clr-h-txt-dark: #546a3d;
+  --clr-h-txt: #86a949;
+  --clr-secondary: #b8c74a;
+  --clr-white-dark: #e7dede;
   --clr-white: rgb(255, 255, 255);
   --clr-black: rgb(34, 29, 29);
   --ff-primary: "Open Sans", sans-serif;
@@ -26,7 +32,7 @@ html {
   --radius: 0.5rem;
   --radius-sm: 0.25rem;
   scroll-behavior: smooth;
-  }
+}
 strong {
   font-weight: 600;
 }
@@ -172,6 +178,13 @@ img {
   width: 10rem;
   margin-top: -0.785rem;
 }
+.logo-menu {
+  position: absolute;
+  width: 11rem;
+  top: 0;
+  left: 1rem;
+  margin-top: -5rem;
+}
 
 /*  */
 .button_container {
@@ -205,7 +218,7 @@ img {
 }
 
 .button_container span {
-  background: #1abc9c;
+  background: var(--clr-primary);
   border: none;
   height: 5px;
   width: 100%;
@@ -226,14 +239,14 @@ img {
 
 .overlay {
   position: fixed;
-  background: #1abc9c;
+  background: var(--clr-primary-dark);
   top: 0;
   left: 0;
   width: 100%;
   height: 0%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  transition: var(--transition);
   overflow: hidden;
   z-index: 9997;
 }
@@ -442,7 +455,6 @@ img {
   width: 100%;
 }
 
-
 @media screen and (max-width: 771px) {
   .skills {
     display: none;
@@ -473,7 +485,7 @@ img {
     display: inline;
     margin-top: 300px;
   }
-  .cta{
+  .cta {
     color: var(--clr-h-txt-dark);
     background-color: var(--clr-white-dark);
   }
@@ -520,7 +532,7 @@ img {
   }
   .card:hover .card_circle {
     background-size: cover;
-    border-radius: 0;  
+    border-radius: 0;
     margin-top: -200px;
   }
 
@@ -576,20 +588,19 @@ img {
 
 .transition {
   transition: 0.3s cubic-bezier(0.3, 0, 0.3, 1.3);
-  
 }
 .card_circle {
-    /* background: url(../assets/img/pexels-polina-tankilevitch-4109910.jpg)
+  /* background: url(../assets/img/pexels-polina-tankilevitch-4109910.jpg)
       no-repeat center bottom; */
-    background-color: var(--clr-primary-dark);
-    background-size: cover;
-    border-radius: 50%;
-    height: 400px;
-    margin-left: -75px;
-    margin-top: -270px;
-    position: absolute;
-    width: 450px;
-  }
+  background-color: var(--clr-primary-dark);
+  background-size: cover;
+  border-radius: 50%;
+  height: 400px;
+  margin-left: -75px;
+  margin-top: -270px;
+  position: absolute;
+  width: 450px;
+}
 .card {
   background-color: #fff;
   bottom: 0;
@@ -907,7 +918,7 @@ section article div div p {
 .product-prev-btn,
 .product-next-btn {
   margin: 0 0.5rem;
-  z-index: 9998;
+  z-index: 200;
   outline: none;
   border: none;
   background: none;
