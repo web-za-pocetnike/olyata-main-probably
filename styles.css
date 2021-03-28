@@ -432,25 +432,122 @@ img {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  height: 1400px;
+  height: 1700px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: rgb(160, 158, 158);
+  margin-bottom: -10px;
 }
 
 .skill-container {
   width: 100%;
 }
 
+
 @media screen and (max-width: 771px) {
   .skills {
     display: none;
   }
+  .card {
+    height: 380px;
+  }
+  .carousel {
+    margin-bottom: -10px;
+    height: 550px;
+  }
+  .carousel-inner {
+    padding-top: 85px;
+  }
+  .card_circle2 {
+    background: url(../assets/img/pexels-polina-tankilevitch-4109910.jpg)
+      no-repeat center bottom;
+    background-color: var(--clr-primary-dark);
+    background-size: cover;
+    border-radius: 50%;
+    padding: 20rem;
+    height: 400px;
+    margin-bottom: 25px;
+    margin-left: -75px;
+    width: 300px;
+  }
+  .card .cta-container {
+    display: inline;
+    margin-top: 300px;
+  }
+  .cta{
+    color: var(--clr-h-txt-dark);
+    background-color: var(--clr-white-dark);
+  }
+  .card .h2 {
+    color: var(--clr-h-txt-dark);
+  }
+  /* .card:hover {
+    height: 370px;
+    width: 300px;
+  }
+   .card:hover .cta-container {
+    display: inline;
+    margin-top: 350px;
+  }
+  .card:hover .card_circle {
+    background-size: cover;
+    border-radius: 0;  
+    margin-top: -200px;
+  }
+  .card:hover h2 {
+    color: var(--clr-h-txt-dark);
+    margin-top: 30px;
+    padding: 5px;
+  }
+  .card:hover h2 small {
+    color: #fff;
+  } */
 }
 
 @media screen and (min-width: 771px) {
   #carousel2 {
     display: none;
+  }
+  .card {
+    height: 300px;
+  }
+  .card:hover {
+    height: 400px;
+    width: 300px;
+  }
+  .card:hover .cta-container {
+    display: inline;
+    margin-top: 330px;
+  }
+  .card:hover .card_circle {
+    background-size: cover;
+    border-radius: 0;  
+    margin-top: -200px;
+  }
+
+  .card:hover h2 {
+    color: var(--clr-h-txt-dark);
+    margin-top: 80px;
+    padding: 5px;
+  }
+  .card:hover h2 small {
+    color: #fff;
+  }
+
+  .card:hover p {
+    margin-top: 230px;
+  }
+  .card_circle2 {
+    background: url(../assets/img/pexels-polina-tankilevitch-4109910.jpg)
+      no-repeat center bottom;
+    background-color: var(--clr-primary-dark);
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    width: 450px;
+  }
+  .cta {
+    color: var(--clr-primary-dark);
   }
 }
 
@@ -478,16 +575,27 @@ img {
 }
 
 .transition {
-  transition: 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+  transition: 0.3s cubic-bezier(0.3, 0, 0.3, 1.3);
+  
 }
-
+.card_circle {
+    /* background: url(../assets/img/pexels-polina-tankilevitch-4109910.jpg)
+      no-repeat center bottom; */
+    background-color: var(--clr-primary-dark);
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+  }
 .card {
   background-color: #fff;
   bottom: 0;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
-  height: 300px;
   left: 0;
   margin: auto;
   overflow: hidden;
@@ -495,66 +603,12 @@ img {
   right: 0;
   top: 0;
   width: 300px;
-}
-
-.card:hover {
-  height: 450px;
-  width: 300px;
-}
-
-.card:hover .cta-container {
-  display: inline;
-  margin-top: 380px;
-}
-
-.card:hover .card_circle {
-  background-size: cover;
-  border-radius: 0;
-  margin-top: -130px;
-}
-
-.card:hover h2 {
-  background: #3487f7;
-  color: #fff;
-  margin-top: 100px;
-  padding: 5px;
-}
-
-.card:hover h2 small {
-  color: #fff;
-}
-
-.card:hover p {
-  margin-top: 300px;
-}
-
-.card_circle {
-  background: url(../assets/img/pexels-polina-tankilevitch-4109910.jpg)
-    no-repeat center bottom;
-  background-color: #3487f7;
-  background-size: cover;
-  border-radius: 50%;
-  height: 400px;
-  margin-left: -75px;
-  margin-top: -270px;
-  position: absolute;
-  width: 450px;
-}
-
-.card_circle2 {
-  background: url(../assets/img/pexels-polina-tankilevitch-4109910.jpg)
-    no-repeat center bottom;
-  background-color: #3487f7;
-  background-size: cover;
-  border-radius: 50%;
-  height: 400px;
-  margin-left: -75px;
-  width: 450px;
+  border-radius: var(--radius);
 }
 
 section article div div h2 {
-  color: #3487f7;
-  font-family: "Raleway", sans-serif;
+  color: var(--clr-h-txt-dark);
+  font-family: var(--ff-primary);
   font-size: 24px;
   font-weight: 200;
   margin-top: 150px;
@@ -566,7 +620,7 @@ section article div div h2 {
 
 section article div div p {
   color: rgba(0, 0, 0, 0.6);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--ff-primary);
   font-size: 100%;
   font-weight: normal;
   margin-top: 200px;
@@ -592,11 +646,10 @@ section article div div p {
   -webkit-border-radius: 2px;
   -webkit-transition: 0.2s ease-out;
   background-clip: padding-box;
-  border: 2px solid #3487f7;
-  border-radius: 2px;
-  color: #3487f7;
+  border: 2px solid var(--clr-h-txt-dark);
+  border-radius: var(--radius);
   display: inline-block;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--ff-primary);
   font-size: 17px;
   font-weight: 400;
   height: 36px;
@@ -607,12 +660,13 @@ section article div div p {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.2s ease-out;
+  margin-top: 15px;
 }
 
 .cta:hover {
-  background-color: yellow;
+  background-color: var(--clr-primary-dark);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: #fff;
+  color: var(--clr-h-txt-dark);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
