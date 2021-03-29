@@ -404,6 +404,19 @@ img {
 }
 
 /* end video  */
+/* Zadatak2 */
+.section-container1 {
+  background: var(--clr-white-dark);
+}
+.img-fluid1 {
+  -webkit-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+.img-fluid1:hover {
+  opacity: 0.3;
+  transition: var(--transition);
+}
+/* end of zadatak2 */
 
 /***** Organic Olive *****/
 
