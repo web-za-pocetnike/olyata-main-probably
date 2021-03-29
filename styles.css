@@ -1176,8 +1176,10 @@ section article div div p {
   display: flex;
   flex-flow: row wrap;
   padding: 45px;
-  color: #fff;
-  background: #262626;
+  color: var(--clr-h-txt-dark);
+  background: var(--clr-white);
+  letter-spacing: var(--spacing);
+  font-size: var(--ff-primary);
 }
 
 .footer > * {
@@ -1185,8 +1187,11 @@ section article div div p {
 }
 
 .footer-left-img {
-  margin-right: 1.25rem;
-  margin-bottom: 2em;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-right: 15px;
+  margin-bottom: 1.25rem;
 }
 
 .footer-left-img img {
@@ -1196,8 +1201,9 @@ section article div div p {
 
 .footer-bottom {
   text-align: center;
-  color: #999;
+  color: var(--clr-black);
   padding-top: 50px;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 600px) {
