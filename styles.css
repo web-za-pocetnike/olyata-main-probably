@@ -387,11 +387,14 @@ img {
 
 .video-title {
   position: absolute;
-  left: 20rem;
+  left: 10rem;
   top: 20rem;
   font-size: 14rem;
-  color: rgba(255, 255, 255, 0.19);
+  font-family: var(--ff-secondary);
+  color: var(--clr-h-txt);
+  opacity: 0.3;
   z-index: 1000;
+  text-align: center;
 }
 .video-fluid {
   position: absolute;
@@ -400,7 +403,6 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
 }
 
 /* end video  */
