@@ -610,10 +610,11 @@ img {
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 1000px;
+    height: 1100px;
   }
   .skill-container {
     width: 50%;
+    padding-top: 1rem;
   }
 }
 
