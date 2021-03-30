@@ -1,36 +1,36 @@
 // Product section control
 
 const productImage = [
- {
-  id: 1,
-  img: src = "./unnamed.jpg",
-  title: "Olive oil with oregano",
-  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sequi neque nostrum, maxime eveniet optio atque? Sequi iste reiciendis corporis provident quisquam alias repudiandae earum exercitationem debitis autem excepturi maxime voluptas magni, tenetur aperiam assumenda illum qui praesentium harum at beatae eveniet veritatis, perferendis blanditiis? Maiores repellendus accusamus placeat debitis aut sed facilis sint, cum sequi nemo! Vel sed amet, natus, at blanditiis reiciendis vitae ex ducimus atque alias nam temporibus, obcaecati culpa consectetur fugiat eligendi facere veniam iure adipisci impedit veritatis? Impedit sed dicta, "
- },
- {
-  id: 2,
-  img: src = "./home-06-400x371.jpg",
-  title: "Olive oil with rosemary",
-  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem."
- },
- {
-  id: 3,
-  img: src = "./unnamed.jpg",
-  title: "Olive oil with garlic",
-  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem."
- },
- {
-  id: 4,
-  img: src = "./home-06-400x371.jpg",
-  title: "Olive oil with lemon/lime",
-  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem."
- },
- {
-  id: 5,
-  img: src = "./unnamed.jpg",
-  title: "Olive oil with thyme",
-  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem."
- },
+  {
+    id: 1,
+    img: src = "./assets/unnamed.jpg",
+    title: "Olive oil with oregano",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sequi neque nostrum, maxime eveniet optio atque? Sequi iste reiciendis corporis provident quisquam alias repudiandae earum exercitationem debitis autem excepturi maxime voluptas magni, tenetur aperiam assumenda illum qui praesentium harum at beatae eveniet veritatis, perferendis blanditiis? Maiores repellendus accusamus placeat debitis aut sed facilis sint, cum sequi nemo! Vel sed amet, natus, at blanditiis reiciendis vitae ex ducimus atque alias nam temporibus, obcaecati culpa consectetur fugiat eligendi facere veniam iure adipisci impedit veritatis? Impedit sed dicta, "
+  },
+  {
+    id: 2,
+    img: src = "./assets/home-06-400x371.jpg",
+    title: "Olive oil with rosemary",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem."
+  },
+  {
+    id: 3,
+    img: src = "./assets/unnamed.jpg",
+    title: "Olive oil with garlic",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem."
+  },
+  {
+    id: 4,
+    img: src = "./assets/home-06-400x371.jpg",
+    title: "Olive oil with lemon/lime",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem."
+  },
+  {
+    id: 5,
+    img: src = "./assets/unnamed.jpg",
+    title: "Olive oil with thyme",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint temporibus a exercitationem suscipit officiis esse dignissimos deleniti atque voluptatem."
+  },
 ];
 
 
@@ -47,48 +47,48 @@ let currentProductItem = 0;
 
 //load initial item
 window.addEventListener("DOMContentLoaded", function () {
- const item = productImage[currentProductItem];
- productImg.src = item.img;
- productTitle.textContent = item.title;
- productText.textContent = item.text;
+  const item = productImage[currentProductItem];
+  productImg.src = item.img;
+  productTitle.textContent = item.title;
+  productText.textContent = item.text;
 });
 
 function showProduct() {
- const item = productImage[currentProductItem];
- productImg.src = item.img;
- productTitle.textContent = item.title;
- productText.textContent = item.text;
+  const item = productImage[currentProductItem];
+  productImg.src = item.img;
+  productTitle.textContent = item.title;
+  productText.textContent = item.text;
 };
 
 prodNextBtn.addEventListener("click", function () {
- currentProductItem++;
- if (currentProductItem > productImage.length - 1) {
-  currentProductItem = 0;
- }
- showProduct(currentProductItem);
+  currentProductItem++;
+  if (currentProductItem > productImage.length - 1) {
+    currentProductItem = 0;
+  }
+  showProduct(currentProductItem);
 });
 
 //show prev hero image
 prodPrevBtn.addEventListener("click", function () {
- currentProductItem--;
- if (currentProductItem < 0) {
-  currentProductItem = productImage.length - 1;
- }
- showProduct(currentProductItem);
+  currentProductItem--;
+  if (currentProductItem < 0) {
+    currentProductItem = productImage.length - 1;
+  }
+  showProduct(currentProductItem);
 });
 
 
-$('#button-toggle').click(function() {
-   $(this).toggleClass('active');
-  
-  });
+$('#button-toggle').click(function () {
+  $(this).toggleClass('active');
+
+});
 
 // nav-hamb
 
-$('.navlink').on('click', function(){
-    $("#overlay").hide();
-    $("#button-toggle").removeClass("active");
-    $('#overlay').toggleClass('open').show();
+$('.navlink').on('click', function () {
+  $("#overlay").hide();
+  $("#button-toggle").removeClass("active");
+  $('#overlay').toggleClass('open').show();
 });
 
 
