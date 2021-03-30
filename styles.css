@@ -189,6 +189,20 @@ img {
 /* end of arrow down */
 
 /* end of arrow */
+
+/* on top */
+.onTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 3rem;
+  background: transparent;
+  color: var(--clr-secondary);
+  z-index: 10;
+  visibility: hidden;
+}
+/* end of on top */
+
 .all_bottom {
   position: absolute;
   top: 740px;
