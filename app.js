@@ -93,3 +93,21 @@ $('.navlink').on('click', function () {
 
 
 // end of nav-hamb
+
+// on top
+var onTop = $(".onTop");
+
+$(window).scroll(function(){
+    if($(this).scrollTop() > 250){ 
+        console.log("Scrolam Dole: " + $(window).scrollTop());
+        onTop.fadeIn(500).css({
+            "cursor": "pointer",
+            "visibility": "visible"
+    });
+        onTop.click(function (){
+            $(window).scrollTop(0);
+        })
+    }else {
+        onTop.fadeOut(500)
+    }
+})
