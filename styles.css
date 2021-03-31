@@ -428,12 +428,13 @@ img {
   background: var(--clr-white-dark);
 }
 .img-fluid1 {
-  -webkit-filter: grayscale(40%);
-  filter: grayscale(40%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .img-fluid1:hover {
-  opacity: 0.3;
-  transition: var(--transition);
+ -webkit-filter: grayscale(0)!important;
+ filter: grayscale(0)!important;
+ transition: var(--transition);
 }
 /* end of zadatak2 */
 
