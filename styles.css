@@ -357,7 +357,8 @@ img {
   width: 100%;
 }
 
-.overlay ul li a:after {
+.navlink:after,
+.navlink1:after {
   content: "";
   position: absolute;
   bottom: 0;

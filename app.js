@@ -78,18 +78,8 @@ prodPrevBtn.addEventListener("click", function () {
 });
 
 
-$('#button-toggle').click(function () {
-  $(this).toggleClass('active');
 
-});
 
-// nav-hamb
-
-$('.navlink').on('click', function () {
-  $("#overlay").hide();
-  $("#button-toggle").removeClass("active");
-  $('#overlay').toggleClass('open').show();
-});
 
 
 // end of nav-hamb
