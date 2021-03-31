@@ -369,6 +369,14 @@ img {
   background: #fff;
   transition: 0.35s;
 }
+/* Klasa za logo, kako bi uvek bio na vrhu */
+.logoTop {
+  z-index: 10000;
+}
+/* Boja Header-a */
+header .container-fluid .container .fixed-top {
+  background-color: black;
+}
 
 @keyframes fadeInRight {
   0% {
@@ -432,9 +440,9 @@ img {
   filter: grayscale(100%);
 }
 .img-fluid1:hover {
- -webkit-filter: grayscale(0)!important;
- filter: grayscale(0)!important;
- transition: var(--transition);
+  -webkit-filter: grayscale(0) !important;
+  filter: grayscale(0) !important;
+  transition: var(--transition);
 }
 /* end of zadatak2 */
 
@@ -1147,7 +1155,6 @@ section article div div p {
   box-shadow: none;
   font-size: 14px;
   color: var(--clr-h-txt-dark);
-  
 }
 
 .contact .php-email-form input::focus,
@@ -1161,7 +1168,7 @@ section article div div p {
 
 .contact .php-email-form textarea {
   padding: 12px 15px;
-  }
+}
 
 .contact .php-email-form button[type="submit"] {
   background: var(--clr-h-txt);
@@ -1174,7 +1181,6 @@ section article div div p {
 .contact .php-email-form button[type="submit"]:hover {
   background: var(--clr-h-txt-dark);
 }
-
 
 @-webkit-keyframes animate-loading {
   0% {
