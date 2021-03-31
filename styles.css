@@ -1040,7 +1040,7 @@ section article div div p {
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5c768d;
+  color: #666;
 }
 
 .section-title p {
@@ -1048,13 +1048,15 @@ section article div div p {
 }
 
 .contact-bg {
-  background: #f5f8fd;
+  background: var(--clr-white-dark);
 }
 
 .contact .info-box {
   color: #444;
+  border-radius: var(--radius);
+  background-color: #fff;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  /* box-shadow: 0 0 10px var(--clr-h-txt); */
   padding: 20px 0 30px 0;
   margin-bottom: 30px;
   width: 100%;
@@ -1062,10 +1064,10 @@ section article div div p {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #428bca;
+  color: var(--clr-h-txt);
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #9eccf4;
+  border: 2px dotted var(--clr-h-txt);
 }
 
 .contact .info-box h3 {
@@ -1083,7 +1085,8 @@ section article div div p {
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  /* box-shadow: 0 0 10px var(--clr-h-txt); */
+  border-radius: var(--radius);
   padding: 30px;
 }
 
@@ -1111,7 +1114,7 @@ section article div div p {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: var(--clr-h-txt);
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1131,7 +1134,7 @@ section article div div p {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid var(--clr-h-txt-dark);
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1139,14 +1142,16 @@ section article div div p {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: var(--radius);
   box-shadow: none;
   font-size: 14px;
+  color: var(--clr-h-txt-dark);
+  
 }
 
 .contact .php-email-form input::focus,
 .contact .php-email-form textarea::focus {
-  background-color: #428bca;
+  background-color: var(--clr-h-txt-dark);
 }
 
 .contact .php-email-form input {
@@ -1155,10 +1160,10 @@ section article div div p {
 
 .contact .php-email-form textarea {
   padding: 12px 15px;
-}
+  }
 
 .contact .php-email-form button[type="submit"] {
-  background: #428bca;
+  background: var(--clr-h-txt);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1166,8 +1171,9 @@ section article div div p {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #6aa3d5;
+  background: var(--clr-h-txt-dark);
 }
+
 
 @-webkit-keyframes animate-loading {
   0% {
